@@ -43,7 +43,7 @@
 
 # What is your status page called?
 # Shows up in the browser bar and meta tags
-title: Eggsample Status
+title: RCC System Status
 
 # Should posts, which have a publish date
 # from the future, be built? Useful for
@@ -143,11 +143,7 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   categories:
-    - name: North Coast
-      description: The main servers are located here.
-      closed: true
-    - name: Empty Category
-    - name: Uncategorized
+    - name: Systems
       untitled: true
 
   # These are your systems. Change them to
@@ -158,20 +154,18 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   systems:
-    - name: Gateway
-      category: North Coast
-    - name: Backup Gateway
-      category: North Coast
-    - name: Website
-      description: The web frontend for the application.
-      category: Uncategorized
-      link: https://example.com/
-    - name: API
-      description: The guts of the application.
-      category: Uncategorized
-    - name: Media Proxy
-      description: This is the service responsible for serving images, audio, and video. It is reliant on our CDN.
-      category: Uncategorized
+    - name: HPC Cluster
+      category: Systems
+    - name: SLURM Scheduler
+      category: Systems
+    - name: HPC Scratch
+      category: Systems
+    - name: Research Group Storage
+      category: Systems
+    - name: Open OnDemand
+      category: Systems
+    - name: Open XDMoD
+      category: Systems
 
   # What date format to use?
   #
@@ -242,7 +236,7 @@ params:
   #
   # Default: `yearly`
   # STRING; `monthly`, `yearly`, `none`
-  incidentHistoryFormat: "yearly"
+  incidentHistoryFormat: "monthly"
 
   # Should incident history be hidden?
   #
@@ -292,7 +286,7 @@ params:
   # on the footer and meta tags.
   #
   # Default: We continuously monitor the status of our services and if there are any interruptions, a note will be posted here.
-  description:
+  description: We continuously monitor the status of our services and if there are any interruptions, a note will be posted here.
 
   # Tabs on homepage
   # Uncomment to enable.
@@ -333,7 +327,7 @@ params:
   # disrupted: "#cc4400"
   # down: "#e60000"
   # notice: "#24478f"
-  brand: "#0a0c0f"
+  brand: "#005A96"
   ok: "#008000"
   disrupted: "#cc4400"
   down: "#e60000"
